@@ -90,13 +90,15 @@ export default function DetectionRulesPage() {
                 key={item.analysis_id}
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
-                onClick={() => setActiveAnalysisId(item.analysis_id)}
               >
-                <div className={`p-4 rounded-xl border transition-all cursor-pointer ${
-                  selectedAnalysis?.analysis_id === item.analysis_id 
-                    ? 'bg-indigo-500/10 border-indigo-500/50 shadow-lg shadow-indigo-500/10' 
-                    : 'bg-white/5 border-white/5 hover:border-white/10'
-                }`}>
+                <div 
+                  onClick={() => setActiveAnalysisId(item.analysis_id)}
+                  className={`p-4 rounded-xl border transition-all cursor-pointer ${
+                    selectedAnalysis?.analysis_id === item.analysis_id 
+                      ? 'bg-indigo-500/10 border-indigo-500/50 shadow-lg shadow-indigo-500/10' 
+                      : 'bg-white/5 border-white/5 hover:border-white/10'
+                  }`}
+                >
                   <div className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">
                     {item.input_type} Vector
                   </div>
