@@ -30,9 +30,8 @@ export const Sidebar: React.FC = () => {
   const pathname = usePathname();
 
   return (
-    <motion.aside
-      initial={false}
-      animate={{ width: isCollapsed ? 80 : 280 }}
+    <aside
+      style={{ width: isCollapsed ? 80 : 280, transition: 'width 0.3s ease' }}
       className="glass-panel h-screen sticky top-0 border-r-0 flex flex-col z-50 overflow-hidden"
     >
       {/* Sidebar Header */}
@@ -102,6 +101,6 @@ export const Sidebar: React.FC = () => {
           {isCollapsed ? <ChevronRight size={20} /> : <div className="flex items-center gap-2 text-xs font-bold"><ChevronLeft size={16} /> Hide Sidebar</div>}
         </button>
       </div>
-    </motion.aside>
+    </aside>
   );
 };
