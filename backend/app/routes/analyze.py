@@ -174,13 +174,13 @@ async def analyze_threat(payload: AnalysisCreate):
             })
 
         # DEMO 4: PDF FILE UPLOAD
-        if filename and "threat_report" in filename.lower():
+        if "threat_report" in text:
              return await save_demo({
                 "analysis_id": str(uuid.uuid4()),
                 "timestamp": datetime.utcnow(),
                 "input_type": "file",
-                "input_text": f"Heuristic analysis for uploaded file: {filename}",
-                "filename": filename,
+                "input_text": f"Heuristic analysis for uploaded file: threat_report.pdf",
+                "filename": "threat_report.pdf",
                 "iocs": {"domain": ["malicious-c2-server.net"], "ipv4": ["91.201.202.13"]},
                 "enrichment": {"malware_families": [], "threat_actors": []},
                 "mitre_mapping": [],
@@ -200,7 +200,7 @@ async def analyze_threat(payload: AnalysisCreate):
                 "detection_rules": {"sigma": "log_source: proxy\ndetection:\n  selection:\n    url: '*malicious-c2-server.net*'\n  condition: selection"},
                 "graph": {
                     "nodes": [
-                        {"id": "file", "type": "file", "data": {"label": filename, "type": "file"}, "position": {"x": 0, "y": 0}},
+                        {"id": "file", "type": "file", "data": {"label": "threat_report.pdf", "type": "file"}, "position": {"x": 0, "y": 0}},
                         {"id": "domain", "type": "domain", "data": {"label": "malicious-c2-server.net", "type": "domain"}, "position": {"x": 250, "y": 0}}
                     ],
                     "edges": [
