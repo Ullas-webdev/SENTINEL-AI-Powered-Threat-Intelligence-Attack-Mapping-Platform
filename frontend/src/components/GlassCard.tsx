@@ -6,6 +6,7 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 interface GlassCardProps {
   children: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
   tiltEnabled?: boolean;
   onClick?: () => void;
 }
@@ -13,6 +14,7 @@ interface GlassCardProps {
 export const GlassCard: React.FC<GlassCardProps> = ({ 
   children, 
   className = '', 
+  style = {},
   tiltEnabled = true,
   onClick
 }) => {
@@ -67,6 +69,7 @@ export const GlassCard: React.FC<GlassCardProps> = ({
         rotateY: tiltEnabled ? rotateY : 0,
         transformStyle: 'preserve-3d',
         perspective: '1000px',
+        ...style
       }}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
