@@ -120,12 +120,13 @@ export default function GlobalMitrePage() {
                       <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">{m.tactic}</div>
                     </div>
                   </div>
-                  <motion.button 
+                  <motion.div 
                     whileHover={{ x: 5 }}
-                    className="text-indigo-400 hover:text-indigo-300 transform"
                   >
-                    <Target size={18} />
-                  </motion.button>
+                    <button className="text-indigo-400 hover:text-indigo-300 transform">
+                      <Target size={18} />
+                    </button>
+                  </motion.div>
                </div>
              ))}
           </div>
