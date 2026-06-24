@@ -2,6 +2,8 @@
 
 Advanced production-ready platform for automated threat analysis, IOC extraction, and MITRE ATT&CK mapping.
 
+**Live Deployment:** [https://sentinel-ai-powered-threat-intellig-one.vercel.app/](https://sentinel-ai-powered-threat-intellig-one.vercel.app/)
+
 ## Features
 
 - **Multi-Vector Input**: Support for raw text, CVE IDs, URLs, and file uploads (PDF, DOCX, TXT, CSV).
@@ -42,6 +44,6 @@ Advanced production-ready platform for automated threat analysis, IOC extraction
 3. Start development server: `npm run dev`.
 
 ---
-*Created by AI-Powered Threat Intelligence Platform*
+*Created by **Ullas** - AI-Powered Threat Intelligence Platform*
 
-Force Deploy Trigger
+
