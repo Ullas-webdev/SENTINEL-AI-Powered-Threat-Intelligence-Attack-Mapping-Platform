@@ -1,0 +1,38 @@
+{
+    "CVE-2023-38831": {
+        "id": "CVE-2023-38831",
+        "cvss": 9.8,
+        "severity": "Critical",
+        "description": "WinRAR exploit allowing remote code execution via specifically crafted archives.",
+        "exploit_available": true,
+        "malware_associated": true,
+        "threat_actor_associated": true
+    },
+    "CVE-2021-44228": {
+        "id": "CVE-2021-44228",
+        "cvss": 10.0,
+        "severity": "Critical",
+        "description": "Apache Log4j2 remote code execution vulnerability (Log4Shell).",
+        "exploit_available": true,
+        "malware_associated": true,
+        "threat_actor_associated": true
+    },
+    "CVE-2023-23397": {
+        "id": "CVE-2023-23397",
+        "cvss": 9.8,
+        "severity": "Critical",
+        "description": "Microsoft Outlook Elevation of Privilege Vulnerability.",
+        "exploit_available": true,
+        "malware_associated": false,
+        "threat_actor_associated": true
+    },
+    "CVE-2020-1472": {
+        "id": "CVE-2020-1472",
+        "cvss": 10.0,
+        "severity": "Critical",
+        "description": "Netlogon elevation of privilege vulnerability (Zerologon).",
+        "exploit_available": true,
+        "malware_associated": true,
+        "threat_actor_associated": false
+    }
+}
