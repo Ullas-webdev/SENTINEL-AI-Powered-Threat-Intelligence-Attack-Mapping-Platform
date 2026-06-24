@@ -43,3 +43,5 @@ Advanced production-ready platform for automated threat analysis, IOC extraction
 
 ---
 *Created by AI-Powered Threat Intelligence Platform*
+
+Force Deploy Trigger
