@@ -81,8 +81,8 @@ export const AnalysisConsole: React.FC = () => {
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
-              className="flex gap-2"
             >
+              <div className="flex gap-2">
               <span className="text-slate-600">[{log.timestamp}]</span>
               <span className={`
                 font-bold uppercase px-1 rounded-[2px]
@@ -94,6 +94,7 @@ export const AnalysisConsole: React.FC = () => {
                 {log.type}
               </span>
               <span className="text-slate-300">{log.message}</span>
+              </div>
             </motion.div>
           ))}
         </AnimatePresence>
