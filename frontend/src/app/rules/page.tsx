@@ -142,7 +142,7 @@ export default function DetectionRulesPage() {
                             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">{rule.title}</span>
                          </div>
                          <button 
-                          onClick={() => copyToClipboard(rule.content)}
+                          onClick={() => copyToClipboard(rule.content || '')}
                           className="text-slate-500 hover:text-white transition-colors"
                          >
                            {copied ? <Check size={14} className="text-emerald-500" /> : <Copy size={14} />}
