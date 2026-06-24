@@ -126,8 +126,8 @@ export default function DetectionRulesPage() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                className="space-y-6"
               >
+                <div className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {[
                     { title: 'Sigma Rule', content: selectedAnalysis.detection_rules.sigma, lang: 'yaml' },
@@ -151,10 +151,9 @@ export default function DetectionRulesPage() {
                       <div className="flex-1 p-4 bg-slate-950/50 overflow-auto font-mono text-[11px] text-indigo-100/80 leading-relaxed whitespace-pre">
                         {rule.content}
                       </div>
-                    </GlassCard>
-                  ))}
                 </div>
-              </motion.div>
+              </div>
+            </motion.div>
             )}
           </AnimatePresence>
           
