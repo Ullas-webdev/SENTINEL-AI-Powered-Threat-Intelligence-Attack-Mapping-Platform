@@ -151,6 +151,8 @@ export default function DetectionRulesPage() {
                       <div className="flex-1 p-4 bg-slate-950/50 overflow-auto font-mono text-[11px] text-indigo-100/80 leading-relaxed whitespace-pre">
                         {rule.content}
                       </div>
+                    </GlassCard>
+                  ))}
                 </div>
               </div>
             </motion.div>
